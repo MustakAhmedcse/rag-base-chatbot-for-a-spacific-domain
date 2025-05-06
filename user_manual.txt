@@ -1,0 +1,386 @@
+Retailer Solution USER MANUAL
+Version 1.0.0
+
+
+
+1 Contents
+2	App Welcome	
+3	Device Registration	
+3.1	Device Registration Primary	
+3.2	Device Registration Secondary	
+3.3	Device Limit Exceeded	
+4	App Login	
+5	Dashboard	
+5.1	Header Section	
+5.2	Recharge Section	
+5.3	Banner Section	
+5.4	Quick Access Section	
+5.5	Sales Section
+5.6	Footer Section	
+6	Recharge	
+6.1	EV Recharge	
+6.1.1	Single EV Recharge	
+6.1.2	Multi EV Recharge	
+6.2	Iris Offer (Amar Offer) Recharge	
+6.3	Transactions	
+
+
+
+2  App Welcome
+When the user opens the Banglalink Retailer App, the following sequence occurs:
+1. Welcome Screen:
+* The Banglalink logo is displayed.
+* Text shown: “BL Retailer App”.
+2. Navigation Logic:
+Based on the user's login status, the app redirects as follows:
+* Logged-in User (session valid within 3 days): ? Redirected to the Dashboard.
+* New User (no prior registration): ? Redirected to the Registration Page.
+* Returning User (login session expired): ? Redirected to the Login Page.
+Note: User sessions expire after 3 days for security purposes.
+3 Device Registration
+
+The BL Retailer App allows multiple users to access the same account from different devices. Devices are categorized as:
+Primary Device – First registered device
+Secondary Devices – All subsequent devices 
+Device Limit: By default, a maximum of 5 devices can be registered to a single account.
+
+On the Device Registration Page, the user will see:
+* Page Title: “Device Registration”
+* Banglalink Icon
+* Input Field for iTopUp number
+* Send Button
+
+3.1 Device Registration Primary
+
+If no primary device is registered in the system, the user will be registered as a Primary device.
+Steps:
+1. The user enters their iTopUp number on the Device Registration page.
+2. The user taps the Send button.
+3. A temporary password is sent to the iTopUp number, and the app redirects the user to the Change Password page.
+4. On the Change Password page:
+* Title: “Change Password”
+* Fields:
+* Temporary Password
+* New Password
+* Confirm New Password
+* Save Button
+5. After tapping Save, the user is redirected to the Login Page.
+
+3.2 Device Registration Secondary
+If a primary device is already registered, the user will be registered as a Secondary device.
+Steps:
+1. The user enters their iTopUp number on the Device Registration page.
+2. The user taps the Send button.
+3. A 6-digit OTP is sent to the iTopUp number, and the app redirects the user to the OTP Page.
+4. On the OTP Page:
+* Title: “Enter 6 Digit Code”
+* Field: OTP Input
+* Resend Button to request the OTP again
+After entering the correct OTP, the user is redirected to the Login Page.
+3.3 Device Limit Exceeded
+If more than 5 devices are already registered:
+* The user will see the message:
+“Your device limit exceeded. Do you want to request for a new device?”
+* Two buttons are shown:
+o Cancel – No action is taken.
+o OK – A device extension request is sent to the admin for approval.
+
+
+
+4 App Login
+On the Login Page, the user will see:
+1. Page Title: “Login”
+2. Banglalink Icon
+3. Input Fields:
+* iTopUp Number
+* Password
+* Remember Me checkbox
+4. Login Button
+5. Additional Links:
+* Forgot Password
+* Terms & Conditions
+* Privacy Policy
+Login Flow:
+* After entering valid credentials and tapping the Login button, the user is redirected to the Retailer App Dashboard.
+
+5 Dashboard
+The Dashboard is the main landing page after login and provides access to key features and user information. It is divided into the following sections:
+5.1 Header Section
+Displays the Retailer Name, a Search Box, and the Unread Notifications Count.
+A down arrow button is located at the bottom-right corner.
+When clicked, it expands to show:
+* iTopUp Balance
+* SIM Balance
+* Scratch Card Balance
+If User click on Notification button than it will go to notification page
+5.2 Recharge Section
+Contains input fields for:
+* Mobile Number
+* Amount
+After filling these fields, tapping the Right Arrow button navigates the user to the Recharge Page, carrying the entered information.
+5.3 Banner Section
+Shows a carousel of image banners that auto-scroll one by one.
+Clicking on any banner takes the user to the Banner Details Page, which includes:
+* Banner Title
+* Start Date
+* End Date
+* Zoom Option for a closer view
+5.4 Quick Access Section
+Provides shortcut icons for easy navigation to internal app pages or external URLs.
+  Examples:
+* Transaction
+* Campaign
+ Clicking an icon (e.g., Transaction) navigates to the relevant page (e.g., Transaction Page).
+5.5 Sales Section
+
+Displays key sales data and visual charts:
+* SIM Sales
+* Scratch Card (SC) Sales
+* iTopUp Sales for Today
+Additional insights
+* Today’s Sales Memo
+* 3 Days Memo History
+* Sales Trend Chart
+5.6  Footer Section
+
+A Navigation Bar with the following menu options:
+* Home
+* SIM Sales
+* iTopUp
+* Commission
+* Menu
+Tapping any item redirects the user to its corresponding page.
+
+6 Recharge
+To initiate a recharge, the user must tap the iTopUp icon from the Dashboard. This redirects the user to the Recharge Page.
+6.1 EV Recharge
+The BL Retailer App supports two types of EV recharge:
+6.1.1 Single EV Recharge
+Steps:
+1. Enter the Customer Mobile Number and Recharge Amount.
+2. The Pay Button becomes active.
+3. Tap the Pay Button to proceed to the Confirmation Page.
+4. On the Confirmation Page, the user sees:
+* Customer Number
+* Recharge Amount
+* Commission Details
+5. To confirm the transaction:
+* Enter the EV PIN
+* Tap the Confirm Button
+6. After a successful transaction:
+* A Success Message is shown with:
+* Customer Number
+* New Balance
+* OK Button
+7. Tapping OK redirects the user back to the Recharge Page.
+6.1.2 Multi EV Recharge
+Steps:
+1. Enter the First Customer Number and Amount, then tap the Plus (+) Button to add.
+2. Repeat to add multiple customer numbers and amounts.
+3. Once all entries are added, the Pay Button becomes active.
+4. Tap the Pay Button to go to the Confirmation Page, where the user will see:
+* List of all customer numbers and their amounts
+* Total Commission
+5. To confirm the multi-recharge:
+* Enter the EV PIN
+* Tap the Confirm Button
+6. After a successful transaction:
+* A Success Message is shown with:
+* All Customer Numbers
+* New Balance
+* OK Button
+7. Tapping OK returns the user to the Recharge Page.
+
+
+6.2 Iris Offer (Amar Offer) Recharge
+The Iris Offer, also known as Amar Offer, allows users to recharge personalized offers for customers.
+Steps:
+1. On the Iris Offer Recharge page:
+* Enter the Customer Mobile Number.
+* Tap the “Show All Offer” button.
+2. Available offers for the customer will appear under the “Amar Offers” tab.
+3. Users can filter the offers by selecting different categories:
+* Voice
+* Data
+* Bundle
+* Rate Cutter
+* Streaming
+* And more...
+4. Each offer is displayed with the following details:
+* Title
+* Duration
+* Commission
+* Cost Amount
+Recharge Flow:
+1. Tap on any offer to proceed.
+2. The app redirects to the Recharge Confirmation Page, showing:
+* Customer Number
+* Offer Amount
+* Commission
+3. To confirm the recharge:
+* Enter the EV PIN
+* Tap the Confirm Button
+4. Upon successful recharge:
+* A Success Message is shown with:
+* Customer Number
+* New Balance
+* OK Button
+5. Tapping OK takes the user back to the Recharge Page.
+
+6.3 Transactions
+Users can view their recharge and commission history from the Transaction Page.
+Steps to Access:
+1. On the Recharge Page, tap the History Icon.
+2. The app will redirect to the Transaction Page, which contains two tabs:
+* RECHARGE
+* INCOMING
+Tab Details:
+* RECHARGE Tab
+Displays the list of all customer recharge transactions.
+* INCOMING Tab
+Displays Commission and Lifting records.
+Additional Features:
+* Users can filter transactions by selecting a specific date range for both tabs.
+
+7 Commission
+
+To access commission-related information, users must tap the Commission Icon from the Dashboard. This will redirect the user to the Commission Page, which is divided into three tabs
+7.1 Sales vs Commission
+This section provides a monthly summary of both commissions earned and sales activities.
+Upper Section: Commission Summary
+* Shows the Total Commission
+* Breaks down the commission into different types (e.g., iTopUp, SIM sales, campaign-based)
+Lower Section: Sales Summary
+Displays sales data for:
+* iTopUp
+* SIM Cards (count)
+* Scratch Cards
+7.2 Commission Details
+This tab lists all individual commission records.
+* Users can filter data by date range to review commissions for specific periods.
+* Useful for verifying daily or custom-period earnings
+7.3 Retailer Statement
+Retailers can view or download a PDF statement for the current month.
+The statement covers the period from the first day of the month to today.
+It includes:
+* Retailer Information
+* Commission Data
+* Lifting Data
+8 Edit Profile
+This section allows users to view and update their profile information within the app.
+8.1 Steps to Edit Profile:
+1. From the Dashboard, tap the App Menu in the Navigation Bar.
+2. On the App Menu Page, the Retailer Information is displayed at the top.
+3. Tap the Edit Profile button located below the retailer details.
+4. The app will navigate to the Edit Profile Page, where users can update:
+* Name
+* Email
+* Address
+* Profile Photo
+5. After editing, tap the Save Button to apply and persist the changes.
+
+
+
+9 Best Practices
+The Best Practices section allows users to view and contribute tips, guidelines, or successful methods related to sales and service.
+
+9.1 Accessing Best Practices
+1. From the Dashboard, tap on the App Menu in the Navigation Bar.
+2. Select “Best Practices” from the menu options.
+3. This will open the Best Practices List Page, where the user can view all previously submitted entries.
+9.2 Adding a New Best Practice
+1. On the Best Practices List Page, tap the Plus (+) Button.
+2. The app redirects to the Add Best Practice Page.
+3. The user can:
+* Enter a Description
+* Upload an Image
+4. Tap the Submit Button to save the entry.
+5. After submission, the user will be redirected back to the Best Practices List Page, where the new entry will be visible.
+
+
+
+10 Voice of Retailer 
+
+The Voice of Retailer feature allows users to submit suggestions, feedback, or competitive insights directly to the admin
+
+10.1 How to Submit:
+1. From the Dashboard, tap the App Menu in the Navigation Bar.
+2. Select “Voice of Retailer” from the menu options.
+3. The app will navigate to the Voice of Retailer Submission Page.
+Submission Form Fields:
+* Select Operator (e.g., Banglalink, Robi other competitors)
+* Select Category (e.g., Suggestion, Feedback)
+* Input Title
+* Input Description
+* Upload Image (optional, for visual reference)
+4. After filling in the required fields, tap the Submit Button to send the entry to the admin.
+
+
+11 Raise Complaint
+The Raise Complaint feature allows users to submit complaints directly to the admin and track their status.
+11.1 How to Submit a Complaint:
+1. From the Dashboard, tap the App Menu in the Navigation Bar.
+2. Select “Raise Complaint” from the menu options.
+3. The app will navigate to the Raise Complaint Page.
+   Complaint Submission Fields:
+* Select Complaint Type
+* Complaint Title
+* Complaint Details
+* Upload Image (optional, for reference)	
+4. Tap the Submit Button to raise the complaint.
+11.2 View Complaint History:
+On the Raise Complaint Page, tap the History Icon (top-right corner).
+This opens the Complaint History Page, where users can:
+* View a list of previously submitted complaints
+* See the status of each complaint
+* Tap the View Button next to any entry to see full complaint details
+
+
+
+
+12 Communications
+
+The Communications section provides users with important updates, training materials, and archived content from Banglalink
+12.1 How to Access:
+1. From the Dashboard, tap the App Menu in the Navigation Bar.
+2. Click  “Communications” from the menu page.
+3. The app will navigate to the Communications Page, which contains three tabs:
+* Communications
+* Training Materials
+* Archived
+
+12.2 Tab Details:
+* Communications
+This tab displays various informational updates such as:
+* Recharge-related notices
+* SIM updates
+* Banglalink news
+
+Users can:
+* Search for specific items
+* Tap on any card to view detailed information
+* Training Materials
+This section contains instructional content related to the BL Retailer App.
+Materials may include:
+* Images
+* Videos
+* External Links
+
+Users can:
+* Search the content
+* Tap on any item to view full details
+* Archived
+This tab shows archived communications and materials, including:
+* Images
+* Links
+* Videos
+Users can:
+* Search the archive
+* View details of each item by tapping on the respective card
+
+
+
+
+13 Campaign
+
+Admin run type of campaign with duration
