@@ -25,7 +25,7 @@ class LLMConfig:
             logging.error(f"Unsupported provider: {provider}")
             raise ValueError(f"Unsupported provider: {provider}")
 
-#llm_config = LLMConfig(provider="openai", model="gpt-4.1-nano")
+#llm_config = LLMConfig(provider="ollama", model="llama3")
 llm_config = LLMConfig(
     provider="openai",
     model="gpt-4.1-nano",
