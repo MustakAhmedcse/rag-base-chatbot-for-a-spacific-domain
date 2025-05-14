@@ -8,3 +8,5 @@ streamlit==1.31.0
 pypdf==4.2.0 
 sentence-transformers==2.6.0 
 chromadb==0.5.0
+imapclient>=2.3.1
+yagmail>=0.15.293
