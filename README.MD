@@ -18,7 +18,6 @@ rag-code-new/
 ├── uploaded_manuals/       # Uploaded files (only latest .txt manual)
 ├── requirements.txt
 ├── README.MD
-├── user_manual.txt         # Example manual
 └── ...
 ```
 
